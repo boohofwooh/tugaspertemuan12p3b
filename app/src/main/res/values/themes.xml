@@ -1,0 +1,10 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.TugasPertemuan12P3b" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">#3174cf</item>
+    </style>
+
+    <style name="Theme.TugasPertemuan12P3b" parent="Base.Theme.TugasPertemuan12P3b" />
+</resources>
