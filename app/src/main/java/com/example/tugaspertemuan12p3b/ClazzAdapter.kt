@@ -11,7 +11,7 @@ typealias OnClickClass = (Clazz) -> Unit
 
 class ClazzAdapter(private val onClickClass: OnClickClass, private val onDelete: (Clazz) -> Unit, private val onEdit: (Clazz) -> Unit) :
     ListAdapter<Clazz, ClazzAdapter.ItemClassViewHolder>(ClazzDiffCallback()) {
-    private var onItemClick: ((Clazz) -> Unit)? = null
+
     inner class ItemClassViewHolder(private val binding: ItemClassBinding) :
         RecyclerView.ViewHolder(binding.root) {
         fun bind(data: Clazz) {
@@ -30,10 +30,6 @@ class ClazzAdapter(private val onClickClass: OnClickClass, private val onDelete:
                 }
             }
         }
-    }
-
-    fun setOnItemClickListener(listener: (Clazz) -> Unit) {
-        onItemClick = listener
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ItemClassViewHolder {
