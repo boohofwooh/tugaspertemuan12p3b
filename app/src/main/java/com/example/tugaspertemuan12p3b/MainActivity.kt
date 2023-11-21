@@ -66,6 +66,11 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+    private fun update(clazz: Clazz){
+        executorService.execute {
+            mClazzDao.update(clazz) }
+    }
+
     private fun delete(clazz: Clazz){
         executorService.execute {
             mClazzDao.delete(clazz)
