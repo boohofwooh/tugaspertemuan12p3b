@@ -18,7 +18,7 @@ class MainActivity3 : AppCompatActivity() {
         binding = ActivityMain3Binding.inflate(layoutInflater)
         setContentView(binding.root)
         executorService = Executors.newSingleThreadExecutor()
-        val db = ClazzRoomDatabase.getInstance(this)
+
         mClazzDao = ClazzRoomDatabase.getInstance(this).clazzDao()
         val studentID = intent.getIntExtra("studentID", 0)
         val studentName = intent.getStringExtra("studentName")
