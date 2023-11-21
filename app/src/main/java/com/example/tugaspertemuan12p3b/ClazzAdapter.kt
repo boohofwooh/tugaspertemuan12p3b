@@ -45,6 +45,7 @@ class ClazzAdapter(private val onClickClass: OnClickClass, private val onDelete:
     }
 
     class ClazzDiffCallback : DiffUtil.ItemCallback<Clazz>() {
+//        menentukan perubahan item mana yang diperlukan untuk diperbarui di dalam RecyclerView.
         override fun areItemsTheSame(oldItem: Clazz, newItem: Clazz): Boolean {
             return oldItem.id == newItem.id
         }
